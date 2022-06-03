@@ -1,0 +1,5 @@
+{
+  "name": "torch",
+  "description": "An iconic torch that lights the way. It can illuminate a small room.",
+  "start_url": "torch.glb"
+}
