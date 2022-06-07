@@ -1,26 +1,10 @@
 import * as THREE from 'three';
 import metaversefile from 'metaversefile';
 
-import {
-  createAudio,
-  getAudio,
-  getFrequenciesByRange,
-  getThreshold,
-  logMood,
-  updateMoodArray,
-} from './audio/index.js';
 
 const { useApp, useLoaders, useFrame, useCleanup, usePhysics, useInternals } = metaversefile;
   
 const baseUrl = import.meta.url.replace(/(\/)[^\/\\]*$/, '$1');
-
-let reactWoofer;
-let reactMid;
-
-let beatFactorBass;
-let beatFactorHi;
-let audio;
-let elapsedTime;
 
 export default () => {
   const app = useApp();
