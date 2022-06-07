@@ -89,10 +89,6 @@ export default () => {
     gltfLoader.load(u, accept, function onprogress() {}, reject);
   });
   console.log("glb data", o);
-    for (let i =0; i< o.morphTargetManager.numTargets; i++){
-    morphTargets.push(o.morphTargetManager.getTarget(i));
-  }
-  console.log(morphTargets);
   const physicsId = physics.addGeometry(o);
   physicsIds.push(physicsId);
   })();
