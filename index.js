@@ -5,6 +5,14 @@ import metaversefile from 'metaversefile';
 const { useApp, useLoaders, useFrame, useCleanup, usePhysics, useInternals } = metaversefile;
   
 const baseUrl = import.meta.url.replace(/(\/)[^\/\\]*$/, '$1');
+const {
+  useApp,
+  useLoaders,
+  useFrame,
+  useCleanup,
+  usePhysics,
+  useInternals
+} = metaversefile;
 
 export default () => {
   const app = useApp();
